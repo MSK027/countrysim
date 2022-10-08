@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 
 
 
-print ("Welcome to Simon's Autism Simulator")
+print ("Welcome to CountrySim")
 
 """ class city:
     def __init__(self, name, node, extractor, stockpile, consumption, manpower, modifier, 
