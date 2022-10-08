@@ -45,28 +45,30 @@ Cambridge = ['Key : Value', 'Key2 : Value2', 'Key3 : Value3']
 playerNation = [York, Cambridge]
 
 
-## tk window and headers
-main = Tk()
-main.title("Country Sim 1800s")
-main.geometry("1920x1080")
-lbl = Label(main, text="Main Menu")
+def menu():
+    ## tk window and headers
+    menu = Tk()
+    menu.title("Country Sim 1800s")
+    menu.geometry("1920x1080")
+    lbl = Label(menu, text="Main Menu")
 
-#Load background
-mainback = Image.open("mainback1.jpg")
-picture = ImageTk.PhotoImage(mainback)
-mnbck = Label(main, image=picture)
+    #Load background
+    menuback = Image.open("menuback1.jpg")
+    picture = ImageTk.PhotoImage(menuback)
+    mnbck = Label(menu, image=picture)
 
-#Buttons
-new = Button(main, text="New Game")
-load = Button(main, text="Load Game")
-options = Button(main, text="Options")
-exit = Button(main, text="Exit Game")
+    #Buttons
+    new = Button(menu, text="New Game")
+    load = Button(menu, text="Load Game")
+    options = Button(menu, text="Options")
+    exit = Button(menu, text="Exit Game")
 
-#Arrange and run
-lbl.pack()
-mnbck.pack()
-new.pack()
-load.pack()
-options.pack()
-exit.pack() 
-main.mainloop()
+    #Arrange and run
+    lbl.pack()
+    mnbck.pack()
+    new.pack()
+    load.pack()
+    options.pack()
+    exit.pack() 
+    menu.menuloop()
+menu()
