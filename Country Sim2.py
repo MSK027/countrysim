@@ -39,6 +39,7 @@ def menu(root):
 
     ## tk page and headers
     page = tk.Frame(root)
+    page.grid()
     resx = root.winfo_screenwidth()
     resy = root.winfo_screenheight()
     root.geometry(str(resx) + "x" + str(resy))
@@ -54,7 +55,7 @@ def menu(root):
     #Buttons
     new = Button(page, text="New Game")
     load = Button(page, text="Load Game")
-    options = Button(page, text="Options", command=switch)
+    options = Button(page, text="Options")
     exit = Button(page, text="Exit Game", command=root.destroy)
 
     #Arrange and run
